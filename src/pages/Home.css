@@ -1,0 +1,84 @@
+/* Home.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.productsWrapper {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 80px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width:270px;
+}
+.card:hover{
+    transform: scale(1.05);
+    background-color: rgba(128, 128, 128, 0.515);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 45%;
+    
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.card h4, .card h5 {
+    margin: 0.5rem 0;
+}
+
+/* Search input styles */
+.searchInput {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Search button styles */
+.searchBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.searchBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive styles using CSS Grid */
+@media (min-width: 992px) {
+    .productsWrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .productsWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .productsWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

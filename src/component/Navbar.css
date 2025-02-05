@@ -1,0 +1,45 @@
+.navbar{
+    padding: 10px;
+    background-color: rgba(59, 160, 121, 0.777);
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    width: 95%; /* Ensure the navbar spans the full width */
+    top: 0; /* Stick it to the top */
+    margin-top: 20px;
+    margin-bottom: 42px;
+    z-index: 1000; /* Ensure it's above other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar input{
+    width: 40%;
+    margin: 10px; /* Add some space around the input */
+}
+
+.navLink{
+    text-decoration: none;
+    color: white;
+}
+.navLink:hover{
+    background-color: rgb(124, 15, 225);
+    padding: 6px;
+    border-radius: 6px;
+}
+.cart-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.itms {
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+}
